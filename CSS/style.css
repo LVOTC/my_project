@@ -1,3 +1,28 @@
-
+body {
+  margin: 0 auto;
+  background-color: lightgrey; }
+  body section#hero {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px; }
+    body section#hero .square_1 {
+      background-color: darkgrey; }
+    body section#hero .square_2 {
+      background-color: grey; }
+    body section#hero .square_3 {
+      background-color: grey; }
+    body section#hero .square_4 {
+      background-color: darkgrey; }
+    body section#hero .hero {
+      height: 500px;
+      margin: 0 auto;
+      width: 50%;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 250px; }
 
 /*# sourceMappingURL=style.css.map */
