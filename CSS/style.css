@@ -1,6 +1,8 @@
 body {
   margin: 0 auto;
   background-color: lightgrey; }
+  body h1 {
+    text-align: center; }
   body section#hero {
     display: -webkit-flex;
     display: flex;
@@ -9,6 +11,10 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px; }
+    body section#hero .parent {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
     body section#hero .square_1 {
       background-color: darkgrey; }
     body section#hero .square_2 {
@@ -21,8 +27,63 @@ body {
       height: 500px;
       margin: 0 auto;
       width: 50%;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 250px; }
+      text-align: center; }
+  body section#new_collection {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+    body section#new_collection .img_collection {
+      margin: 50px auto 0px auto;
+      width: 30%; }
+      body section#new_collection .img_collection img {
+        max-width: 300px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 0px;
+        margin-bottom: 0px; }
+  body section#bottom_collection {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto; }
+    body section#bottom_collection .bottom_collection {
+      margin: 0 auto;
+      width: 30%;
+      background-color: #e8e8e8;
+      height: 110px;
+      margin-top: -5px; }
+      body section#bottom_collection .bottom_collection h3 {
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        margin: 0 auto;
+        text-align: center;
+        padding: 5px; }
+  body section#subscribe {
+    display: -webkit-flex;
+    display: flex;
+    background-color: lightgrey; }
+    body section#subscribe .subscribe {
+      width: 300px;
+      height: 50px;
+      margin: auto; }
+      body section#subscribe .subscribe input {
+        width: 300px;
+        height: 50px; }
+      body section#subscribe .subscribe input::placeholder {
+        padding-left: 25px;
+        font-weight: 300;
+        font-size: 16px; }
+      body section#subscribe .subscribe button {
+        width: 300px;
+        height: 50px;
+        margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
