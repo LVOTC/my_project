@@ -1,8 +1,66 @@
 body{
   margin:0 auto;
-  background-color: lightgrey;
+  font-family: 'Raleway', sans-serif;
+  footer{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(228, 228, 228, 1);
+    line-height: 40px;
+    -webkit-box-shadow: inset 0px 2px 8px 0px rgba(184,184,184,1);
+    -moz-box-shadow: inset 0px 2px 8px 0px rgba(184,184,184,1);
+    box-shadow: inset 0px 2px 8px 0px rgba(184,184,184,1);
+    span{
+      float: right;
+      padding: 0 20px;
+      letter-spacing: 2px;
+      // margin-right: 20px;
+    }
+    a{
+      text-decoration: none;
+      float: right;
+      padding-right: 230px;
+      border-left: 1px solid rgba(147, 147, 147, 0.75);
+      padding-left: 10px;
+      color: #313131;
+
+    }
+
+  }
+  nav{
+    position: absolute;
+    top: 40px;
+    background-color: #313131;
+    width: 100%;
+    line-height: 60px;
+    .navbar{
+      text-align: center;
+      #brand{
+        font-size: 26px;
+      }
+        a{
+          text-decoration: none;
+          color: #fff;
+          padding: 0 45px;
+
+        }
+    }
+  }
   h1{
     text-align: center;
+    margin-top: 50px;
+    color: #313131;
+    line-height: 2px;
+    padding-top: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  h5{
+    text-align: center;
+    font-size: 21px;
+    color: #313131;
+    line-height: 1px;
+    padding-bottom: 15px;
+    font-weight: 300;
   }
   section#hero{
         display: -webkit-flex;
@@ -10,30 +68,55 @@ body{
 		    -webkit-flex-wrap: wrap;
 		    flex-wrap: wrap;
 		    max-width: 1000px;
-		    margin: 0 auto;
+		    margin: 0px auto;
 		    padding: 10px;
+        padding-top: 103px;
+        // position: absolute;
+
 
         .parent{
           position: relative;
-          top: 50%;
+          top: 45%;
           transform: translateY(-50%);
 
+            h3{
+              color:#313131;
+              font-weight: 100;
+              font-size: 36px;
+              line-height: 20px;
+              letter-spacing: 2px;
+            }
+            h2{
+              color:#313131;
+              font-weight: 300;
+              font-size: 38px;
+              line-height: 0px;
+              letter-spacing: 5px;
+            }
+            a{
+              text-decoration: none;
+              color: #313131;
+              border-top: 1px solid #313131;
+              padding-top: 5px;
+              letter-spacing: 2px;
+            }
         }
 
           .square_1{
             background-color: darkgrey;
           }
           .square_2{
-            background-color: grey;
+            background-color: rgba(138, 232, 236, 0.7);
 
 
           }
           .square_3{
-            background-color: grey;
+            background-color: rgba(255, 130, 138, 0.39);
           }
           .square_4{
             background-color: darkgrey;
           }
+
 
     .hero{
       height: 500px;
@@ -43,6 +126,14 @@ body{
 
 
     }
+
+  }
+  .bottom_color{
+    position: absolute;
+    top: 603px;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(255, 130, 138, 0.19);
   }
   section#new_collection{
     display: -webkit-flex;
@@ -79,7 +170,6 @@ body{
           background-color: #e8e8e8;
           height: 110px;
           margin-top: -5px;
-
           h3{
             position: relative;
             top: 40%;
@@ -87,6 +177,22 @@ body{
             margin: 0 auto;
             text-align: center;
             padding: 5px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #313131;
+          }
+          h4{
+            position: relative;
+            top: 40%;
+            transform: translateY(-50%);
+            margin: 0 auto;
+            text-align: center;
+            // padding: 5px;
+            font-weight: 300;
+            // letter-spacing: 2px;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #313131;
           }
 
     }
@@ -94,16 +200,14 @@ body{
   section#subscribe{
     display: -webkit-flex;
     display: flex;
-    // width: 400px;
-    // height: 250px;
-    background-color: lightgrey;
+
       .subscribe{
         width: 300px;
         height: 125px;
         margin: auto;
           input{
-            width: 300px;
-            height: 50px;
+            width: 294px;
+            height: 40px;
           }
           input::placeholder{
             padding-left: 25px;
@@ -112,8 +216,15 @@ body{
           }
           button{
             width: 300px;
-            height: 50px;
+            height: 40px;
             margin-top: 20px;
+            background-color: #313131;
+            border: none;
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 300;
           }
       }
   }
@@ -124,8 +235,9 @@ body{
     -webkit-justify-content: center;
     justify-content: center;
     // max-width: 1000px;
-    background-color: black;
-    margin: 50px 0px;
+    background-color: rgba(36, 35, 35, 1);
+    margin: 50px 0px 0px 0px;
+    padding: 25px 0;
     .sales{
       margin: 40px 20px;
       max-height: 450px;
@@ -145,6 +257,12 @@ body{
         font-size: 38px;
         color: #fff;
         text-transform: uppercase;
+        background-color: rgba(82, 84, 99, 0.62);
+        width: 300px;
+        // padding-left: 50px;
+        margin-left: 80px;
+        font-weight: 400;
+
 
       }
       h2{
@@ -154,8 +272,60 @@ body{
         text-align: center;
         font-size: 52px;
         color: #fff;
+        background-color: rgba(82, 84, 99, 0.62);
+        margin:0 30px;
+        font-weight: 600;
 
       }
     }
+  }
+  section#contact{
+    position: relative;
+    color:#939393;
+    background-color: rgba(228, 228, 228, 1);
+    .contact{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      padding: 25px 0px;
+      .side_line{
+        position: absolute;
+        top: 23px;
+        height: 157px;
+        width: 1px;
+        background-color: rgba(147, 147, 147, 0.35);
+      }
+      #line_1{
+        left:0px;
+      }
+
+      #line_2{
+        left: 0px;
+      }
+      #line_3{
+        left: 0px;
+      }
+
+      .text{
+        margin: 0px 50px;
+        padding-top: 0;
+        padding: 0 20px;
+        position: relative;
+
+      }
+
+    }
+
+  }
+  footer#bottom{
+    text-align: center;
+    background-color: rgba(36, 35, 35, 1);
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    box-shadow: none;
   }
 }

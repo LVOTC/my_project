@@ -1,26 +1,91 @@
 body {
   margin: 0 auto;
-  background-color: lightgrey; }
+  font-family: 'Raleway', sans-serif; }
+  body footer {
+    position: absolute;
+    width: 100%;
+    background-color: #e4e4e4;
+    line-height: 40px;
+    -webkit-box-shadow: inset 0px 2px 8px 0px #b8b8b8;
+    -moz-box-shadow: inset 0px 2px 8px 0px #b8b8b8;
+    box-shadow: inset 0px 2px 8px 0px #b8b8b8; }
+    body footer span {
+      float: right;
+      padding: 0 20px;
+      letter-spacing: 2px; }
+    body footer a {
+      text-decoration: none;
+      float: right;
+      padding-right: 230px;
+      border-left: 1px solid rgba(147, 147, 147, 0.75);
+      padding-left: 10px;
+      color: #313131; }
+  body nav {
+    position: absolute;
+    top: 40px;
+    background-color: #313131;
+    width: 100%;
+    line-height: 60px; }
+    body nav .navbar {
+      text-align: center; }
+      body nav .navbar #brand {
+        font-size: 26px; }
+      body nav .navbar a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0 45px; }
   body h1 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 50px;
+    color: #313131;
+    line-height: 2px;
+    padding-top: 25px;
+    font-weight: 500;
+    letter-spacing: 2px; }
+  body h5 {
+    text-align: center;
+    font-size: 21px;
+    color: #313131;
+    line-height: 1px;
+    padding-bottom: 15px;
+    font-weight: 300; }
   body section#hero {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 10px; }
+    margin: 0px auto;
+    padding: 10px;
+    padding-top: 103px; }
     body section#hero .parent {
       position: relative;
-      top: 50%;
+      top: 45%;
       transform: translateY(-50%); }
+      body section#hero .parent h3 {
+        color: #313131;
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 20px;
+        letter-spacing: 2px; }
+      body section#hero .parent h2 {
+        color: #313131;
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 0px;
+        letter-spacing: 5px; }
+      body section#hero .parent a {
+        text-decoration: none;
+        color: #313131;
+        border-top: 1px solid #313131;
+        padding-top: 5px;
+        letter-spacing: 2px; }
     body section#hero .square_1 {
       background-color: darkgrey; }
     body section#hero .square_2 {
-      background-color: grey; }
+      background-color: rgba(138, 232, 236, 0.7); }
     body section#hero .square_3 {
-      background-color: grey; }
+      background-color: rgba(255, 130, 138, 0.39); }
     body section#hero .square_4 {
       background-color: darkgrey; }
     body section#hero .hero {
@@ -28,6 +93,12 @@ body {
       margin: 0 auto;
       width: 50%;
       text-align: center; }
+  body .bottom_color {
+    position: absolute;
+    top: 603px;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(255, 130, 138, 0.19); }
   body section#new_collection {
     display: -webkit-flex;
     display: flex;
@@ -65,33 +136,53 @@ body {
         transform: translateY(-50%);
         margin: 0 auto;
         text-align: center;
-        padding: 5px; }
+        padding: 5px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #313131; }
+      body section#bottom_collection .bottom_collection h4 {
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 300;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #313131; }
   body section#subscribe {
     display: -webkit-flex;
-    display: flex;
-    background-color: lightgrey; }
+    display: flex; }
     body section#subscribe .subscribe {
       width: 300px;
       height: 125px;
       margin: auto; }
       body section#subscribe .subscribe input {
-        width: 300px;
-        height: 50px; }
+        width: 294px;
+        height: 40px; }
       body section#subscribe .subscribe input::placeholder {
         padding-left: 25px;
         font-weight: 300;
         font-size: 16px; }
       body section#subscribe .subscribe button {
         width: 300px;
-        height: 50px;
-        margin-top: 20px; }
+        height: 40px;
+        margin-top: 20px;
+        background-color: #313131;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 300; }
   body section#sales {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
-    background-color: black;
-    margin: 50px 0px; }
+    background-color: #242323;
+    margin: 50px 0px 0px 0px;
+    padding: 25px 0; }
     body section#sales .sales {
       margin: 40px 20px;
       max-height: 450px;
@@ -105,12 +196,55 @@ body {
         text-align: center;
         font-size: 38px;
         color: #fff;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        background-color: rgba(82, 84, 99, 0.62);
+        width: 300px;
+        margin-left: 80px;
+        font-weight: 400; }
       body section#sales .sales h2 {
         position: relative;
         top: -395px;
         text-align: center;
         font-size: 52px;
-        color: #fff; }
+        color: #fff;
+        background-color: rgba(82, 84, 99, 0.62);
+        margin: 0 30px;
+        font-weight: 600; }
+  body section#contact {
+    position: relative;
+    color: #939393;
+    background-color: #e4e4e4; }
+    body section#contact .contact {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      padding: 25px 0px; }
+      body section#contact .contact .side_line {
+        position: absolute;
+        top: 23px;
+        height: 157px;
+        width: 1px;
+        background-color: rgba(147, 147, 147, 0.35); }
+      body section#contact .contact #line_1 {
+        left: 0px; }
+      body section#contact .contact #line_2 {
+        left: 0px; }
+      body section#contact .contact #line_3 {
+        left: 0px; }
+      body section#contact .contact .text {
+        margin: 0px 50px;
+        padding-top: 0;
+        padding: 0 20px;
+        position: relative; }
+  body footer#bottom {
+    text-align: center;
+    background-color: #242323;
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */
