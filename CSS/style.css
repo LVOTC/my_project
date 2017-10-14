@@ -50,6 +50,13 @@ body {
     background-color: rgba(204, 186, 182, 0.15);
     width: 100%;
     height: 118px; }
+  body h2 {
+    text-align: center;
+    font-weight: 500;
+    color: #313131; }
+  body #faq_h2 {
+    margin-top: 50px;
+    font-weight: 300; }
   body h5 {
     text-align: center;
     font-size: 21px;
@@ -57,6 +64,59 @@ body {
     line-height: 1px;
     padding-bottom: 15px;
     font-weight: 300; }
+  body section#costumer {
+    margin-top: 103px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgba(204, 186, 182, 0.15); }
+    body section#costumer .costumer_text {
+      margin: 0 auto;
+      width: 40%;
+      text-align: center; }
+    body section#costumer .costumer_box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      width: 600px;
+      height: 190px;
+      margin: 0 auto; }
+      body section#costumer .costumer_box .costumer {
+        height: 100px;
+        margin: 10px 2.5px; }
+        body section#costumer .costumer_box .costumer .costumer_button button {
+          padding: 5px 20px;
+          float: right;
+          background-color: #313131;
+          color: #fff;
+          border: none;
+          letter-spacing: 1.5px; }
+        body section#costumer .costumer_box .costumer .costumer_input input {
+          width: 200px;
+          display: block;
+          padding: 10px;
+          margin-bottom: 5px;
+          border: none;
+          background-color: rgba(204, 186, 182, 0.3); }
+        body section#costumer .costumer_box .costumer textarea {
+          width: 200px;
+          padding: 15.5px;
+          border: none;
+          background-color: rgba(204, 186, 182, 0.3); }
+  body section#faq {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 20px auto; }
+    body section#faq .faq {
+      padding: 50px 5px;
+      width: 40%;
+      margin: 0 auto;
+      font-weight: 300; }
+      body section#faq .faq h3 {
+        font-weight: 500; }
   body section#hero {
     display: -webkit-flex;
     display: flex;
