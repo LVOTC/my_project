@@ -10,21 +10,26 @@ body{
     -webkit-box-shadow: inset 0px 2px 8px 0px rgba(184,184,184,1);
     -moz-box-shadow: inset 0px 2px 8px 0px rgba(184,184,184,1);
     box-shadow: inset 0px 2px 8px 0px rgba(184,184,184,1);
-    span{
-      float: right;
-      padding: 0 20px;
-      letter-spacing: 2px;
-      // margin-right: 20px;
-    }
-    a{
-      text-decoration: none;
-      float: right;
-      padding-right: 230px;
-      border-left: 1px solid rgba(147, 147, 147, 0.75);
-      padding-left: 10px;
-      color: #313131;
+    .footer_shop{
+      max-width: 950px;
+      margin: auto;
+      span{
+        float: right;
+        padding: 0 20px;
+        letter-spacing: 2px;
+      }
+      a{
+        text-decoration: none;
+        float: right;
 
+        border-left: 1px solid rgba(147, 147, 147, 0.75);
+        padding-left: 10px;
+        color: #313131;
+
+      }
     }
+
+
 
   }
   nav{
@@ -32,18 +37,22 @@ body{
     top: 40px;
     background-color: #313131;
     width: 100%;
-    line-height: 60px;
+    line-height:60px;
     .navbar{
       text-align: center;
+      a{
+        text-decoration: none;
+        color: #fff;
+        padding: 0 35px;
+      }
       #brand{
         font-size: 26px;
       }
-        a{
-          text-decoration: none;
-          color: #fff;
-          padding: 0 45px;
-
-        }
+      .bar_icon{
+        display: none;
+        position: absolute;
+        padding-top:6px;
+      }
     }
   }
   h1{
@@ -71,7 +80,14 @@ body{
   }
   #faq_h2{
     margin-top: 50px;
-    font-weight: 300;
+    font-weight: 500;
+    text-transform: uppercase;
+
+  }
+  #about_us_h2{
+    margin-top: 0px;
+    font-weight: 500;
+    text-transform: uppercase;
   }
   h5{
     text-align: center;
@@ -91,6 +107,34 @@ body{
       width: 40%;
       text-align: center;
     }
+    .visit_us_box{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      width: 650px;
+      height: 340px;
+      margin: 40px auto;
+        .visit_us{
+          padding: 0px;
+          h3, p {
+            text-align: left;
+            margin: 30px 0px;
+            font-weight: 500;
+          }
+          p{
+            font-weight: 300;
+            line-height: 20px;
+            color: #313131;
+
+          }
+          h3{
+            line-height: 0px;
+          }
+        }
+
+
+    }
     .costumer_box{
       display: -webkit-flex;
       display: flex;
@@ -99,6 +143,9 @@ body{
       width: 600px;
       height: 190px;
       margin: 0 auto;
+        .visit_us{
+          height: 300px;
+        }
         .costumer{
           height: 100px;
           margin: 10px 2.5px;
@@ -133,6 +180,15 @@ body{
 
       }
     }
+  }
+  section#about_us{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    font-weight: 300;
+    color: #313131;
   }
   section#faq{
     display: -webkit-flex;
@@ -272,7 +328,7 @@ body{
 			    width: 30%;
 
           img{
-            max-width: 300px;
+            max-width: 315px;
             margin: 0;
             padding: 0;
             padding-bottom: 0px;
@@ -287,19 +343,20 @@ body{
     flex-wrap: wrap;
     max-width: 1050px;
     margin: 0 auto;
-        .bottom_collection{
+        .bottom_collection_text{
           margin: 0 auto;
 			    width: 30%;
           background-color: #e8e8e8;
           height: 110px;
           margin-top: -5px;
+          max-width: 315px;
+          padding: 0px;
           h3{
             position: relative;
             top: 40%;
             transform: translateY(-50%);
             margin: 0 auto;
             text-align: center;
-            padding: 5px;
             font-weight: 300;
             letter-spacing: 2px;
             color: #313131;
@@ -451,4 +508,26 @@ body{
     letter-spacing: 2px;
     box-shadow: none;
   }
+}
+@media only screen and (max-width: 1064px){
+body{
+  nav{
+    line-height: 64px;
+    .navbar{
+      // float: right;
+      #brand{
+        float: left;
+      }
+      .meniu{
+        display: none;
+      }
+      .bar_icon{
+        display: inline-block;
+        text-align: right;
+        right: 24px;
+      }
+    }
+  }
+}
+
 }

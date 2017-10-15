@@ -10,17 +10,19 @@ body {
     -webkit-box-shadow: inset 0px 2px 8px 0px #b8b8b8;
     -moz-box-shadow: inset 0px 2px 8px 0px #b8b8b8;
     box-shadow: inset 0px 2px 8px 0px #b8b8b8; }
-    body .top_footer span {
-      float: right;
-      padding: 0 20px;
-      letter-spacing: 2px; }
-    body .top_footer a {
-      text-decoration: none;
-      float: right;
-      padding-right: 230px;
-      border-left: 1px solid rgba(147, 147, 147, 0.75);
-      padding-left: 10px;
-      color: #313131; }
+    body .top_footer .footer_shop {
+      max-width: 950px;
+      margin: auto; }
+      body .top_footer .footer_shop span {
+        float: right;
+        padding: 0 20px;
+        letter-spacing: 2px; }
+      body .top_footer .footer_shop a {
+        text-decoration: none;
+        float: right;
+        border-left: 1px solid rgba(147, 147, 147, 0.75);
+        padding-left: 10px;
+        color: #313131; }
   body nav {
     position: absolute;
     top: 40px;
@@ -29,12 +31,16 @@ body {
     line-height: 60px; }
     body nav .navbar {
       text-align: center; }
-      body nav .navbar #brand {
-        font-size: 26px; }
       body nav .navbar a {
         text-decoration: none;
         color: #fff;
-        padding: 0 45px; }
+        padding: 0 35px; }
+      body nav .navbar #brand {
+        font-size: 26px; }
+      body nav .navbar .bar_icon {
+        display: none;
+        position: absolute;
+        padding-top: 6px; }
   body h1 {
     text-align: center;
     margin-top: 30px;
@@ -56,7 +62,12 @@ body {
     color: #313131; }
   body #faq_h2 {
     margin-top: 50px;
-    font-weight: 300; }
+    font-weight: 500;
+    text-transform: uppercase; }
+  body #about_us_h2 {
+    margin-top: 0px;
+    font-weight: 500;
+    text-transform: uppercase; }
   body h5 {
     text-align: center;
     font-size: 21px;
@@ -73,6 +84,26 @@ body {
       margin: 0 auto;
       width: 40%;
       text-align: center; }
+    body section#costumer .visit_us_box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      width: 650px;
+      height: 340px;
+      margin: 40px auto; }
+      body section#costumer .visit_us_box .visit_us {
+        padding: 0px; }
+        body section#costumer .visit_us_box .visit_us h3, body section#costumer .visit_us_box .visit_us p {
+          text-align: left;
+          margin: 30px 0px;
+          font-weight: 500; }
+        body section#costumer .visit_us_box .visit_us p {
+          font-weight: 300;
+          line-height: 20px;
+          color: #313131; }
+        body section#costumer .visit_us_box .visit_us h3 {
+          line-height: 0px; }
     body section#costumer .costumer_box {
       display: -webkit-flex;
       display: flex;
@@ -81,6 +112,8 @@ body {
       width: 600px;
       height: 190px;
       margin: 0 auto; }
+      body section#costumer .costumer_box .visit_us {
+        height: 300px; }
       body section#costumer .costumer_box .costumer {
         height: 100px;
         margin: 10px 2.5px; }
@@ -103,6 +136,14 @@ body {
           padding: 15.5px;
           border: none;
           background-color: rgba(204, 186, 182, 0.3); }
+  body section#about_us {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    font-weight: 300;
+    color: #313131; }
   body section#faq {
     display: -webkit-flex;
     display: flex;
@@ -206,7 +247,7 @@ body {
       margin: 50px auto 0px auto;
       width: 30%; }
       body section.new_collection .img_collection img {
-        max-width: 300px;
+        max-width: 315px;
         margin: 0;
         padding: 0;
         padding-bottom: 0px;
@@ -218,23 +259,24 @@ body {
     flex-wrap: wrap;
     max-width: 1050px;
     margin: 0 auto; }
-    body section.bottom_collection .bottom_collection {
+    body section.bottom_collection .bottom_collection_text {
       margin: 0 auto;
       width: 30%;
       background-color: #e8e8e8;
       height: 110px;
-      margin-top: -5px; }
-      body section.bottom_collection .bottom_collection h3 {
+      margin-top: -5px;
+      max-width: 315px;
+      padding: 0px; }
+      body section.bottom_collection .bottom_collection_text h3 {
         position: relative;
         top: 40%;
         transform: translateY(-50%);
         margin: 0 auto;
         text-align: center;
-        padding: 5px;
         font-weight: 300;
         letter-spacing: 2px;
         color: #313131; }
-      body section.bottom_collection .bottom_collection h4 {
+      body section.bottom_collection .bottom_collection_text h4 {
         position: relative;
         top: 40%;
         transform: translateY(-50%);
@@ -340,5 +382,17 @@ body {
     font-size: 14px;
     letter-spacing: 2px;
     box-shadow: none; }
+
+@media only screen and (max-width: 1064px) {
+  body nav {
+    line-height: 64px; }
+    body nav .navbar #brand {
+      float: left; }
+    body nav .navbar .meniu {
+      display: none; }
+    body nav .navbar .bar_icon {
+      display: inline-block;
+      text-align: right;
+      right: 24px; } }
 
 /*# sourceMappingURL=style.css.map */
