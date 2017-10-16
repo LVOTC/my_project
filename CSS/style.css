@@ -373,6 +373,8 @@ body {
         padding-top: 0;
         padding: 0 20px;
         position: relative; }
+        body section#contact .contact .text i {
+          padding: 0 10px; }
   body footer#bottom {
     text-align: center;
     background-color: #242323;
@@ -393,6 +395,34 @@ body {
     body nav .navbar .bar_icon {
       display: inline-block;
       text-align: right;
-      right: 24px; } }
+      right: 24px; }
+  body section.new_collection {
+    max-width: 930px; }
+    body section.new_collection .shop_img {
+      margin: 0px auto;
+      width: 300px; }
+      body section.new_collection .shop_img img {
+        max-width: 300px; } }
+@media only screen and (max-width: 940px) {
+  body section.new_collection {
+    max-width: 620px; }
+    body section.new_collection .shop_img {
+      margin: 0px auto;
+      width: 300px; }
+      body section.new_collection .shop_img img {
+        max-width: 300px; } }
+@media only screen and (max-width: 760px) {
+  body section.new_collection {
+    -webkit-align-content: center;
+    align-content: center; }
+    body section.new_collection .shop_img {
+      margin: 0px auto;
+      max-width: 300px; } }
+@media only screen and (max-width: 620px) {
+  body section.new_collection {
+    max-width: 320px; }
+    body section.new_collection .shop_img {
+      margin: 0px auto;
+      max-width: 300px; } }
 
 /*# sourceMappingURL=style.css.map */
