@@ -1,11 +1,23 @@
+$font-stack: 'Raleway', sans-serif;
+$nav-color: #313131;
+$nav-text-color: #fff;
+$sq-2-color: rgba(138, 232, 236, 0.7);
+$sq-3-color: rgba(255, 130, 138, 0.39);
+$top-tp-color: rgba(255, 130, 138, 0.19);
+$ft-color: rgba(228, 228, 228, 1);
+$label-text-color: lightgrey;
+$top-tp-sm-color: rgba(204, 186, 182, 0.15);
+$text-color: #313131;
+$nav-lw-text: #939393;
+
 body{
   margin:0 auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: $font-stack;
   .top_footer{
     position: absolute;
     top:0;
     width: 100%;
-    background-color: rgba(228, 228, 228, 1);
+    background-color: $ft-color;
     line-height: 40px;
     -webkit-box-shadow: inset 0px 2px 8px 0px rgba(184,184,184,1);
     -moz-box-shadow: inset 0px 2px 8px 0px rgba(184,184,184,1);
@@ -30,14 +42,14 @@ body{
   nav{
     position: absolute;
     top: 40px;
-    background-color: #313131;
+    background-color: $nav-color;
     width: 100%;
     line-height:60px;
     .navbar{
       text-align: center;
       a{
         text-decoration: none;
-        color: #fff;
+        color: $nav-text-color;
         padding: 0 30px;
       }
       #brand{
@@ -53,7 +65,7 @@ body{
   h1{
     text-align: center;
     margin-top: 30px;
-    // padding-bottom: 40px;
+    padding-bottom: 35px;
     color: #313131;
     line-height: 2px;
     padding-top: 25px;
@@ -63,7 +75,7 @@ body{
   .color_back{
     position: absolute;
     top: 103px;
-    background-color: rgba(204, 186, 182, 0.15);
+    background-color: $top-tp-sm-color;
     width: 100%;
     height: 118px;
 
@@ -71,7 +83,7 @@ body{
   h2{
     text-align: center;
     font-weight: 500;
-    color: #313131;
+    color: $text-color;
   }
   #faq_h2{
     margin-top: 50px;
@@ -87,7 +99,7 @@ body{
   h5{
     text-align: center;
     font-size: 21px;
-    color: #313131;
+    color: $text-color;
     line-height: 1px;
     padding-bottom: 15px;
     font-weight: 300;
@@ -96,7 +108,7 @@ body{
     margin-top: 103px;
     text-align: center;
     padding-top: 20px;
-    background-color: rgba(204, 186, 182, 0.15);
+    background-color: $top-tp-sm-color;
     .costumer_text{
       margin: 0 auto;
       width: 40%;
@@ -120,7 +132,7 @@ body{
           p{
             font-weight: 300;
             line-height: 20px;
-            color: #313131;
+            color: $text-color;
 
           }
           h3{
@@ -183,7 +195,7 @@ body{
     margin-top: 40px;
     margin-bottom: 70px;
     font-weight: 300;
-    color: #313131;
+    color: $text-color;
   }
   section#faq{
     display: -webkit-flex;
@@ -199,6 +211,7 @@ body{
       font-weight: 300;
        h3{
          font-weight: 500;
+         color: $text-color;
        }
 
     }
@@ -221,14 +234,14 @@ body{
           transform: translateY(-50%);
 
             h3{
-              color:#313131;
+              color:$text-color;
               font-weight: 100;
               font-size: 36px;
               line-height: 20px;
               letter-spacing: 2px;
             }
             h2{
-              color:#313131;
+              color:$text-color;
               font-weight: 300;
               font-size: 38px;
               line-height: 0px;
@@ -236,29 +249,20 @@ body{
             }
             a{
               text-decoration: none;
-              color: #313131;
+              color: $text-color;
               border-top: 1px solid #313131;
               padding-top: 5px;
               letter-spacing: 2px;
             }
         }
-
-          .square_1{
-            background-color: darkgrey;
-          }
           .square_2{
-            background-color: rgba(138, 232, 236, 0.7);
+            background-color: $sq-2-color;
 
 
           }
           .square_3{
-            background-color: rgba(255, 130, 138, 0.39);
+            background-color: $sq-3-color;
           }
-          .square_4{
-            background-color: darkgrey;
-          }
-
-
     .hero{
       height: 450px;
       margin: 0 auto;
@@ -267,17 +271,78 @@ body{
       img{
         height: 450px;
       }
-
-
     }
-
   }
   .bottom_color{
     position: absolute;
     top: 553px;
     height: 450px;
     width: 100%;
-    background-color: rgba(255, 130, 138, 0.19);
+    background-color: $top-tp-color;
+    z-index: -1;
+  }
+  section.lookbook_collection{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    .lookbook{
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 350px;
+      height: 480px;
+      margin: 0 auto
+      ;
+      margin-bottom: 30px;
+      -webkit-transition-property: width, height; /* Safari */
+     -webkit-transition-duration: 2s; /* Safari */
+     transition-property: background-size;
+     transition-duration: 1s;
+        &:hover{
+          background-size: 120% auto;
+        }
+    }
+  }
+  .color_back_lookbook{
+    position: absolute;
+    top: 103px;
+    background-color: $top-tp-sm-color;
+    width: 100%;
+    height: 156px;
+  }
+  .lookbook_text_top{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px 0;
+    text-align: center;
+    h2{
+      line-height: 5px;
+      color: $text-color;
+    }
+    h3{
+      font-weight: 300;
+      color: $text-color;
+    }
+  }
+  .lookbook_text{
+    text-align: center;
+    margin: 30px 34px 60px 0;
+    a{
+      text-decoration: none;
+    }
+    h3{
+      display: inline;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding: 0 10px;
+      color: $text-color;
+
+    }
   }
   section.new_collection{
     display: -webkit-flex;
@@ -305,7 +370,7 @@ body{
               margin: 0 auto;
               font-weight: 300;
               letter-spacing: 2px;
-              color: lightgrey;
+              color: $label-text-color;
               font-size: 12px;
 
             }
@@ -315,7 +380,7 @@ body{
               letter-spacing: 2px;
               font-size: 18px;
               text-transform: uppercase;
-              color: #313131;
+              color: $text-color;
               font-size: 16px;
 
             }
@@ -335,7 +400,7 @@ body{
           .bottom_collection_text{
             margin: 0 auto;
   			    width: 100%;
-            background-color: #e8e8e8;
+            background-color: $ft-color;
             height: 110px;
             margin-top: -5px;
             max-width: 315px;
@@ -348,7 +413,7 @@ body{
               text-align: center;
               font-weight: 300;
               letter-spacing: 2px;
-              color: #313131;
+              color: $text-color;
             }
             h4{
               position: relative;
@@ -361,9 +426,8 @@ body{
               // letter-spacing: 2px;
               font-size: 24px;
               text-transform: uppercase;
-              color: #313131;
+              color: $text-color;
             }
-
       }
     }
   }
@@ -404,7 +468,7 @@ body{
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
-    background-color: rgba(36, 35, 35, 1);
+    background-color: $nav-color;
     margin: 50px 0px 0px 0px;
     padding: 25px 0;
     .sales{
@@ -426,7 +490,6 @@ body{
         text-transform: uppercase;
         background-color: rgba(82, 84, 99, 0.62);
         width: 300px;
-        // padding-left: 50px;
         margin-left: 80px;
         font-weight: 400;
       }
@@ -445,8 +508,8 @@ body{
   }
   section#contact{
     position: relative;
-    color:#939393;
-    background-color: rgba(228, 228, 228, 1);
+    color:$nav-lw-text;
+    background-color: $ft-color;
     .contact{
       display: -webkit-flex;
       display: flex;
@@ -479,15 +542,16 @@ body{
           i{
             padding: 0 10px;
           }
-
+          a{
+            text-decoration: none;
+            color: $nav-lw-text;
+          }
       }
-
     }
-
   }
   footer#bottom{
     text-align: center;
-    background-color: rgba(36, 35, 35, 1);
+    background-color: $nav-color;
     margin: 0;
     padding: 20px 0;
     color: #fff;
@@ -639,6 +703,9 @@ body{
         margin: auto;
       }
     }
+    .color_back{
+      height: 116px;
+    }
     section.new_collection{
       -webkit-align-content: center;
       align-content: center;
@@ -671,7 +738,7 @@ body{
   body{
     .top_footer{
       .footer_shop{
-        max-width: 340px;
+        max-width: 320px;
         margin: auto;
       }
     }
@@ -693,6 +760,9 @@ body{
     .bottom_color{
       top: 883px;
       height: 380px;
+    }
+    .color_back{
+      height: 108px;
     }
     section.new_collection{
       max-width: 320px;
@@ -801,11 +871,185 @@ section#sales{
             i{
               padding:10px 10px;
             }
-
         }
-
       }
+    }
+  }
+}
+@media only screen and (max-width: 420px){
+  body{
+    .top_footer{
+      .footer_shop{
+        max-width: 250px;
+        margin: auto;
+      }
+    }
+    section#hero{
+      .hero{
+        height: 250px;
+        width: 250px;
+        img{
+          height: 250px;
+        }
+      }
+      .square_2{
+        height: 100px;
+        .parent{
+          a{
+            font-size: 12px;
+          }
+          h2{
+            font-size: 16px;
+          }
+          h3{
+            font-size: 12px;
+          }
+        }
+      }
+      .square_3{
+        height: 100px;
+        .parent{
+          a{
+            font-size: 12px;
+          }
+          h2{
+            font-size: 16px;
+          }
+          h3{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .bottom_color{
+      top: 553px;
+      height: 250px;
+    }
+    .color_back{
+      height: 103px;
+    }
+    h1{
+      padding-bottom: 35px;
+    }
+    section.new_collection{
+        max-width: 250px;
+          .shop_img{
+            margin: 0px auto;
+            max-width: 250px;
+              img{
+                max-width: 250px;
+              }
+            .shop_img_text{
+              font-size: 10px;
+            }
+          }
+          .img_collection{
+            margin: 50px auto 0px auto;
+            width: 250px;
 
+            img{
+              max-width: 250px;
+            }
+            .bottom_collection_text{
+              width: 100%;
+              height: 70px;
+              max-width: 250px;
+
+              font-size: 16px;
+              h4{
+                font-size: 16px;
+              }
+        }
+      }
+    }
+    h1{
+      font-size: 24px;
+    }
+h5{
+  font-size: 10px;
+  line-height: 20px;
+}
+section#sales{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  .sales{
+    max-width: 250px;
+    max-height: 250px;
+    margin: 20px 0;
+    img{
+      max-width: 250px;
+      max-height: 250px;
+    }
+    h4{
+      position: relative;
+      top: -185px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: rgba(82, 84, 99, 0.62);
+      width: 191px;
+      // padding-left: 50px;
+      margin-left: 30px;
+      font-weight: 400;
+    }
+    h2{
+      position: relative;
+      top: -185px;
+      text-align: center;
+      font-size: 20px;
+
+      font-weight: 600;
+
+    }
+  }
+}
+    section#contact{
+      position: relative;
+      color:#939393;
+      background-color: rgba(228, 228, 228, 1);
+      .contact{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-align-content: center;
+        align-content: center;
+        padding: 25px 0px;
+        max-width: 400px;
+        margin: 0 auto;
+          #contact_store{display: none;}
+          #contact_logo{display: none;}
+        #line_1{
+          top: 10px;
+          display: none;
+        }
+        #line_2{
+          left: 0px;
+          display: none;
+        }
+        #line_3{
+          top: 10px;
+          display: none;
+        }
+        .text{
+          text-align: center;
+          margin: 0px;
+          padding-top: 0;
+          padding: 0 20px;
+          position: relative;
+          width: 400px;
+            i{
+              padding:10px 10px;
+            }
+        }
+      }
+    }
+    footer#bottom{
+      font-size: 10px;
     }
   }
 }

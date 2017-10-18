@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
   body .top_footer {
     position: absolute;
     top: 0;
@@ -44,6 +44,7 @@ body {
   body h1 {
     text-align: center;
     margin-top: 30px;
+    padding-bottom: 35px;
     color: #313131;
     line-height: 2px;
     padding-top: 25px;
@@ -156,7 +157,8 @@ body {
       margin: 0 auto;
       font-weight: 300; }
       body section#faq .faq h3 {
-        font-weight: 500; }
+        font-weight: 500;
+        color: #313131; }
   body section#hero {
     display: -webkit-flex;
     display: flex;
@@ -188,14 +190,10 @@ body {
         border-top: 1px solid #313131;
         padding-top: 5px;
         letter-spacing: 2px; }
-    body section#hero .square_1 {
-      background-color: darkgrey; }
     body section#hero .square_2 {
       background-color: rgba(138, 232, 236, 0.7); }
     body section#hero .square_3 {
       background-color: rgba(255, 130, 138, 0.39); }
-    body section#hero .square_4 {
-      background-color: darkgrey; }
     body section#hero .hero {
       height: 450px;
       margin: 0 auto;
@@ -208,7 +206,61 @@ body {
     top: 553px;
     height: 450px;
     width: 100%;
-    background-color: rgba(255, 130, 138, 0.19); }
+    background-color: rgba(255, 130, 138, 0.19);
+    z-index: -1; }
+  body section.lookbook_collection {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+    body section.lookbook_collection .lookbook {
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 350px;
+      height: 480px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      -webkit-transition-property: width, height;
+      /* Safari */
+      -webkit-transition-duration: 2s;
+      /* Safari */
+      transition-property: background-size;
+      transition-duration: 1s; }
+      body section.lookbook_collection .lookbook:hover {
+        background-size: 120% auto; }
+  body .color_back_lookbook {
+    position: absolute;
+    top: 103px;
+    background-color: rgba(204, 186, 182, 0.15);
+    width: 100%;
+    height: 156px; }
+  body .lookbook_text_top {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px 0;
+    text-align: center; }
+    body .lookbook_text_top h2 {
+      line-height: 5px;
+      color: #313131; }
+    body .lookbook_text_top h3 {
+      font-weight: 300;
+      color: #313131; }
+  body .lookbook_text {
+    text-align: center;
+    margin: 30px 34px 60px 0; }
+    body .lookbook_text a {
+      text-decoration: none; }
+    body .lookbook_text h3 {
+      display: inline;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding: 0 10px;
+      color: #313131; }
   body section.new_collection {
     display: -webkit-flex;
     display: flex;
@@ -256,7 +308,7 @@ body {
       body section.new_collection .img_collection .bottom_collection_text {
         margin: 0 auto;
         width: 100%;
-        background-color: #e8e8e8;
+        background-color: #e4e4e4;
         height: 110px;
         margin-top: -5px;
         max-width: 315px;
@@ -310,7 +362,7 @@ body {
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
-    background-color: #242323;
+    background-color: #313131;
     margin: 50px 0px 0px 0px;
     padding: 25px 0; }
     body section#sales .sales {
@@ -369,9 +421,12 @@ body {
         position: relative; }
         body section#contact .contact .text i {
           padding: 0 10px; }
+        body section#contact .contact .text a {
+          text-decoration: none;
+          color: #939393; }
   body footer#bottom {
     text-align: center;
-    background-color: #242323;
+    background-color: #313131;
     margin: 0;
     padding: 20px 0;
     color: #fff;
@@ -466,6 +521,8 @@ body {
   body .top_footer .footer_shop {
     max-width: 520px;
     margin: auto; }
+  body .color_back {
+    height: 116px; }
   body section.new_collection {
     -webkit-align-content: center;
     align-content: center; }
@@ -486,7 +543,7 @@ body {
           font-size: 16px; } }
 @media only screen and (max-width: 620px) {
   body .top_footer .footer_shop {
-    max-width: 340px;
+    max-width: 320px;
     margin: auto; }
   body section#hero .hero {
     height: 380px;
@@ -500,6 +557,8 @@ body {
   body .bottom_color {
     top: 883px;
     height: 380px; }
+  body .color_back {
+    height: 108px; }
   body section.new_collection {
     max-width: 320px; }
     body section.new_collection .shop_img {
@@ -587,5 +646,131 @@ body {
         width: 400px; }
         body section#contact .contact .text i {
           padding: 10px 10px; } }
+@media only screen and (max-width: 420px) {
+  body .top_footer .footer_shop {
+    max-width: 250px;
+    margin: auto; }
+  body section#hero .hero {
+    height: 250px;
+    width: 250px; }
+    body section#hero .hero img {
+      height: 250px; }
+  body section#hero .square_2 {
+    height: 100px; }
+    body section#hero .square_2 .parent a {
+      font-size: 12px; }
+    body section#hero .square_2 .parent h2 {
+      font-size: 16px; }
+    body section#hero .square_2 .parent h3 {
+      font-size: 12px; }
+  body section#hero .square_3 {
+    height: 100px; }
+    body section#hero .square_3 .parent a {
+      font-size: 12px; }
+    body section#hero .square_3 .parent h2 {
+      font-size: 16px; }
+    body section#hero .square_3 .parent h3 {
+      font-size: 12px; }
+  body .bottom_color {
+    top: 553px;
+    height: 250px; }
+  body .color_back {
+    height: 103px; }
+  body h1 {
+    padding-bottom: 35px; }
+  body section.new_collection {
+    max-width: 250px; }
+    body section.new_collection .shop_img {
+      margin: 0px auto;
+      max-width: 250px; }
+      body section.new_collection .shop_img img {
+        max-width: 250px; }
+      body section.new_collection .shop_img .shop_img_text {
+        font-size: 10px; }
+    body section.new_collection .img_collection {
+      margin: 50px auto 0px auto;
+      width: 250px; }
+      body section.new_collection .img_collection img {
+        max-width: 250px; }
+      body section.new_collection .img_collection .bottom_collection_text {
+        width: 100%;
+        height: 70px;
+        max-width: 250px;
+        font-size: 16px; }
+        body section.new_collection .img_collection .bottom_collection_text h4 {
+          font-size: 16px; }
+  body h1 {
+    font-size: 24px; }
+  body h5 {
+    font-size: 10px;
+    line-height: 20px; }
+  body section#sales {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%; }
+    body section#sales .sales {
+      max-width: 250px;
+      max-height: 250px;
+      margin: 20px 0; }
+      body section#sales .sales img {
+        max-width: 250px;
+        max-height: 250px; }
+      body section#sales .sales h4 {
+        position: relative;
+        top: -185px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: rgba(82, 84, 99, 0.62);
+        width: 191px;
+        margin-left: 30px;
+        font-weight: 400; }
+      body section#sales .sales h2 {
+        position: relative;
+        top: -185px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600; }
+  body section#contact {
+    position: relative;
+    color: #939393;
+    background-color: #e4e4e4; }
+    body section#contact .contact {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-align-content: center;
+      align-content: center;
+      padding: 25px 0px;
+      max-width: 400px;
+      margin: 0 auto; }
+      body section#contact .contact #contact_store {
+        display: none; }
+      body section#contact .contact #contact_logo {
+        display: none; }
+      body section#contact .contact #line_1 {
+        top: 10px;
+        display: none; }
+      body section#contact .contact #line_2 {
+        left: 0px;
+        display: none; }
+      body section#contact .contact #line_3 {
+        top: 10px;
+        display: none; }
+      body section#contact .contact .text {
+        text-align: center;
+        margin: 0px;
+        padding-top: 0;
+        padding: 0 20px;
+        position: relative;
+        width: 400px; }
+        body section#contact .contact .text i {
+          padding: 10px 10px; }
+  body footer#bottom {
+    font-size: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
