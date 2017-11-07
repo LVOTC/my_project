@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>my_project E-shop</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/shop-item.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
 </head>
 <body>
@@ -20,7 +21,7 @@
 				<a href="index.html" id="brand">LOGO</a>
 					<a href="index.html" class="meniu">HOME</a>
 					<a href="shop.html" class="meniu">SHOP</a>
-					<a href="#" class="meniu">LOOKBOOK</a>
+					<a href="lookbook.html" class="meniu">LOOKBOOK</a>
 					<a href="costumer_care.html" class="meniu">COSTUMER CARE</a>
 					<a href="contact.html" class="meniu">CONTACT</a>
 				<a href="#"><i class="fa fa-bars fa-3x bar_icon" aria-hidden="true"></i></a>
@@ -28,27 +29,59 @@
 	</nav>
 <section id="hero">
 </section>
-<div class="lookbook_text_top">
-  <h2>LOOKBOOK</h2>
-  <h3>Autumn / Winter 2017</h3>
+<div class="color_back"></div>
+<div class="shop_text">
+	<h1>Women</h1>
 </div>
-<div class="color_back_lookbook"></div>
-<section class="lookbook_collection">
-	<div class="lookbook" style='background-image: url("img/lookbook1.jpg");'>
+<section id="shop_nav">
+	<div class="nav_meniu">
+		<a href="index.html">home</a>
+		/
+		<a href="shop.html">women</a>
+		/
+		<span>product name</span>
 	</div>
-	<div class="lookbook" style='background-image: url("img/lookbook2.jpg");'>
+	<div class="nav_next">
+		<i class="fa fa-angle-right" aria-hidden="true"></i>
+
+		<a href="#">prev</a>
+		|
+		<a href="#">next</a>
+		<i class="fa fa-angle-left" aria-hidden="true"></i>
 	</div>
-	<div class="lookbook" style='background-image: url("img/lookbook3.jpg");'>
-	</div>
-</div>
-<div class="lookbook" style='background-image: url("img/lookbook4.jpg");'>
-</div>
 </section>
-<div class="lookbook_text">
-  <a href="shop.html"><h3>Shop WOMEN</h3></a>
-  <h3>|</h3>
-  <a href="shop.html"><h3>Shop MEN</h3></a>
-</div>
+<section id="item_box">
+		<div class="item_box_left" style='background-image: url("img/collection1.jpg");'>
+
+		</div>
+		<div class="item_box_right">
+			<h2>I'm a Product</h2>
+			<span>69.99eur</span>
+			<p>Size</p>
+			<select class="size" name="size" placeholder="xac">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>
+				<option value="XL">XL</option>
+			</select>
+			<p>Quantity</p>
+			<select class="quantity" name="quantity">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+
+			<button type="button" name="button">ADD TO CART</button>
+			<div id="holder">
+				<h3>PRODUCT INFO<i id="icon_minus" onclick="showMore('first'); return false;" class="fa fa-minus-square-o" aria-hidden="true"></i></h3>
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+			</div>
+			<div id="holder2">
+				<h3>PRODUCT INFO<i id="icon_minus2" onclick="showMore('second'); return false;" class="fa fa-minus-square-o" aria-hidden="true"></i></h3>
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+			</div>
+		</div>
+</section>
 <section id="contact">
 	<div class="contact">
 		<div class="text" id="contact_logo">
@@ -82,4 +115,7 @@
 	&copy; 2017 by Lukas Vaicekauskas.
 </footer>
 </body>
+<script type="text/javascript" src="js/script.js">
+
+</script>
 </html>

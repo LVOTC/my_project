@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   font-family: "Raleway", sans-serif; }
-  body .top_footer {
+  body .header {
     position: absolute;
     top: 0;
     width: 100%;
@@ -10,14 +10,14 @@ body {
     -webkit-box-shadow: inset 0px 2px 8px 0px #b8b8b8;
     -moz-box-shadow: inset 0px 2px 8px 0px #b8b8b8;
     box-shadow: inset 0px 2px 8px 0px #b8b8b8; }
-    body .top_footer .footer_shop {
+    body .header .footer_shop {
       max-width: 880px;
       margin: auto; }
-      body .top_footer .footer_shop span {
+      body .header .footer_shop span {
         float: right;
         padding: 0 20px;
         letter-spacing: 2px; }
-      body .top_footer .footer_shop a {
+      body .header .footer_shop a {
         text-decoration: none;
         float: right;
         border-left: 1px solid rgba(147, 147, 147, 0.75);
@@ -33,8 +33,10 @@ body {
       text-align: center; }
       body nav .navbar a {
         text-decoration: none;
-        color: #fff;
+        color: lightgrey;
         padding: 0 30px; }
+        body nav .navbar a:hover {
+          color: #fff; }
       body nav .navbar #brand {
         font-size: 26px; }
       body nav .navbar .bar_icon {
@@ -44,7 +46,6 @@ body {
   body h1 {
     text-align: center;
     margin-top: 30px;
-    padding-bottom: 35px;
     color: #313131;
     line-height: 2px;
     padding-top: 25px;
@@ -60,6 +61,14 @@ body {
     text-align: center;
     font-weight: 500;
     color: #313131; }
+  body .shop_text {
+    padding-bottom: 35px; }
+  body .collection_text {
+    text-align: center;
+    margin: 0 auto; }
+    body .collection_text h5 {
+      line-height: 5px;
+      margin-top: 0; }
   body #faq_h2 {
     margin-top: 50px;
     font-weight: 500;
@@ -75,6 +84,47 @@ body {
     line-height: 1px;
     padding-bottom: 15px;
     font-weight: 300; }
+  body section#costumer_care {
+    margin-top: 103px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgba(204, 186, 182, 0.15); }
+    body section#costumer_care .costumer_text {
+      margin: 0 auto;
+      width: 40%;
+      text-align: center; }
+    body section#costumer_care .costumer_box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      width: 600px;
+      height: 190px;
+      margin: 0 auto; }
+      body section#costumer_care .costumer_box .visit_us {
+        height: 300px; }
+      body section#costumer_care .costumer_box .costumer {
+        height: 100px;
+        margin: 10px 2.5px; }
+        body section#costumer_care .costumer_box .costumer .costumer_button button {
+          padding: 5px 20px;
+          float: right;
+          background-color: #313131;
+          color: #fff;
+          border: none;
+          letter-spacing: 1.5px; }
+        body section#costumer_care .costumer_box .costumer .costumer_input input {
+          width: 200px;
+          display: block;
+          padding: 10px;
+          margin-bottom: 5px;
+          border: none;
+          background-color: rgba(204, 186, 182, 0.3); }
+        body section#costumer_care .costumer_box .costumer textarea {
+          width: 200px;
+          padding: 15.5px;
+          border: none;
+          background-color: rgba(204, 186, 182, 0.3); }
   body section#costumer {
     margin-top: 103px;
     text-align: center;
@@ -97,45 +147,14 @@ body {
         body section#costumer .visit_us_box .visit_us h3, body section#costumer .visit_us_box .visit_us p {
           text-align: left;
           margin: 30px 0px;
-          font-weight: 500; }
+          font-weight: 500;
+          padding: 0 10px; }
         body section#costumer .visit_us_box .visit_us p {
           font-weight: 300;
-          line-height: 20px;
+          line-height: 0px;
           color: #313131; }
         body section#costumer .visit_us_box .visit_us h3 {
           line-height: 0px; }
-    body section#costumer .costumer_box {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-justify-content: center;
-      justify-content: center;
-      width: 600px;
-      height: 190px;
-      margin: 0 auto; }
-      body section#costumer .costumer_box .visit_us {
-        height: 300px; }
-      body section#costumer .costumer_box .costumer {
-        height: 100px;
-        margin: 10px 2.5px; }
-        body section#costumer .costumer_box .costumer .costumer_button button {
-          padding: 5px 20px;
-          float: right;
-          background-color: #313131;
-          color: #fff;
-          border: none;
-          letter-spacing: 1.5px; }
-        body section#costumer .costumer_box .costumer .costumer_input input {
-          width: 200px;
-          display: block;
-          padding: 10px;
-          margin-bottom: 5px;
-          border: none;
-          background-color: rgba(204, 186, 182, 0.3); }
-        body section#costumer .costumer_box .costumer textarea {
-          width: 200px;
-          padding: 15.5px;
-          border: none;
-          background-color: rgba(204, 186, 182, 0.3); }
   body section#about_us {
     width: 60%;
     margin: 0 auto;
@@ -214,6 +233,7 @@ body {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 1430px;
     margin: 0 auto;
     padding-bottom: 0px;
     margin-bottom: 0px; }
@@ -269,7 +289,11 @@ body {
     max-width: 1050px;
     margin: 0 auto;
     padding-bottom: 0px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    transition-property: background-color;
+    transition-duration: 3s; }
+    body section.new_collection:hover .bottom_collection_text1 {
+      background-color: red; }
     body section.new_collection .shop_img {
       margin: 0px auto;
       width: 25%; }
@@ -297,22 +321,37 @@ body {
           color: #313131;
           font-size: 16px; }
     body section.new_collection .img_collection {
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 350px;
+      height: 480px;
+      margin: 0 auto;
       margin: 50px auto 0px auto;
-      width: 30%; }
-      body section.new_collection .img_collection img {
-        max-width: 315px;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 0px;
-        margin-bottom: 0px; }
+      width: 30%;
+      margin-bottom: 100px;
+      -webkit-transition-property: background-size;
+      /* Safari */
+      -webkit-transition-duration: 2s;
+      /* Safari */
+      transition-property: background-size;
+      transition-duration: 2s; }
+      body section.new_collection .img_collection:hover .bottom_collection_text_1 {
+        display: block !important; }
+        body section.new_collection .img_collection:hover .bottom_collection_text_1 h4 {
+          color: white; }
+      body section.new_collection .img_collection:hover .bottom_collection_text {
+        display: none; }
+      body section.new_collection .img_collection:hover {
+        background-size: 140% auto; }
       body section.new_collection .img_collection .bottom_collection_text {
         margin: 0 auto;
         width: 100%;
         background-color: #e4e4e4;
         height: 110px;
-        margin-top: -5px;
         max-width: 315px;
-        padding: 0px; }
+        position: relative;
+        top: 470px; }
         body section.new_collection .img_collection .bottom_collection_text h3 {
           position: relative;
           top: 40%;
@@ -332,6 +371,29 @@ body {
           font-size: 24px;
           text-transform: uppercase;
           color: #313131; }
+      body section.new_collection .img_collection .bottom_collection_text_1 {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #ff828a;
+        height: 110px;
+        max-width: 315px;
+        position: relative;
+        top: 470px;
+        display: none;
+        transition: background-color 3s ease-out; }
+        body section.new_collection .img_collection .bottom_collection_text_1:hover {
+          background-color: #8ae8ec; }
+        body section.new_collection .img_collection .bottom_collection_text_1 a {
+          text-decoration: none; }
+          body section.new_collection .img_collection .bottom_collection_text_1 a h4 {
+            position: relative;
+            top: 45px;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: 300;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #313131; }
   body section#subscribe {
     display: -webkit-flex;
     display: flex; }
@@ -433,6 +495,9 @@ body {
     font-size: 14px;
     letter-spacing: 2px;
     box-shadow: none; }
+    body footer#bottom a {
+      text-decoration: none;
+      color: #fff; }
 
 @media only screen and (max-width: 1064px) {
   body nav {
@@ -540,11 +605,95 @@ body {
         max-width: 450px;
         font-size: 16px; }
         body section.new_collection .img_collection .bottom_collection_text h4 {
-          font-size: 16px; } }
+          font-size: 16px; }
+  body section#costumer {
+    margin-top: 103px;
+    text-align: center;
+    padding-top: 20px;
+    height: 710px;
+    margin-bottom: 40px; }
+    body section#costumer .costumer_text {
+      width: 80%; }
+    body section#costumer .visit_us_box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      max-width: 300px;
+      height: 340px;
+      margin: 40px auto;
+      margin-top: 0px; }
+      body section#costumer .visit_us_box .visit_us {
+        width: 300px;
+        padding: 0px; }
+        body section#costumer .visit_us_box .visit_us iframe {
+          width: 300px; }
+        body section#costumer .visit_us_box .visit_us h3 {
+          text-align: center;
+          margin: 30px 0px;
+          font-weight: 500;
+          padding: 5px 0;
+          padding-top: 0px; }
+        body section#costumer .visit_us_box .visit_us p {
+          font-weight: 300;
+          text-align: center;
+          margin: 30px 0px;
+          line-height: 0px;
+          color: #313131;
+          font-size: 16px;
+          font-weight: 300; }
+        body section#costumer .visit_us_box .visit_us h3 {
+          line-height: 0px; } }
 @media only screen and (max-width: 620px) {
   body .top_footer .footer_shop {
     max-width: 320px;
     margin: auto; }
+  body section#faq {
+    max-width: 620px;
+    margin: 20px auto; }
+    body section#faq .faq {
+      padding: 50px 5px;
+      width: 80%;
+      margin: 0 auto;
+      font-weight: 300;
+      text-align: center; }
+      body section#faq .faq h3 {
+        font-weight: 500;
+        color: #313131; }
+  body section#costumer_care {
+    margin-top: 103px;
+    text-align: center;
+    padding-top: 20px;
+    height: 460px;
+    margin-bottom: 40px; }
+    body section#costumer_care .costumer_text {
+      width: 70%;
+      margin: 0 auto; }
+    body section#costumer_care .costumer_box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 220px;
+      margin: 0 auto; }
+      body section#costumer_care .costumer_box .costumer {
+        max-width: 220px;
+        margin: 10px 2.5px; }
+        body section#costumer_care .costumer_box .costumer .costumer_button button {
+          padding: 5px 20px;
+          float: right;
+          border: none;
+          letter-spacing: 1.5px; }
+        body section#costumer_care .costumer_box .costumer .costumer_input input {
+          width: 210px;
+          display: block;
+          padding: 10px;
+          margin-bottom: 5px;
+          border: none; }
+        body section#costumer_care .costumer_box .costumer textarea {
+          width: 200px;
+          padding: 15.5px;
+          border: none; }
   body section#hero .hero {
     height: 380px;
     width: 380px; }
@@ -650,6 +799,9 @@ body {
   body .top_footer .footer_shop {
     max-width: 250px;
     margin: auto; }
+  body .lookbook_text {
+    font-size: 14px;
+    margin: 10px 0 30px 0; }
   body section#hero .hero {
     height: 250px;
     width: 250px; }
@@ -704,6 +856,8 @@ body {
   body h5 {
     font-size: 10px;
     line-height: 20px; }
+  body section#about_us {
+    width: 80%; }
   body section#sales {
     display: -webkit-flex;
     display: flex;

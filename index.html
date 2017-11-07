@@ -6,10 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>my_project E-shop</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/shop-item.css">
+	<link rel="stylesheet" href="css/shop-item.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
+
 </head>
 <body>
-	<div class="top_footer">
+	<div class="header">
 		<div class="footer_shop">
 			<a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
 			<span>FREE SHIPPING</span>
@@ -50,32 +54,42 @@
 
 </section>
 <div class="bottom_color"></div>
-<h1>New Collection</h1>
+<div class="collection_text">
+	<h1>New Collection</h1>
+</div>
 <section class="new_collection">
-	<div class="img_collection">
-		<img src="img/collection1.jpg" alt="">
+	<div class="img_collection" style='background-image: url("img/collection1.jpg");'>
+		<div class="bottom_collection_text">
+			<h4 >Pavadinimas</h4>
+			<h3>99.99eur</h3>
+		</div>
+		<div class="bottom_collection_text_1">
+			<a href="shop.html"><h4 class="box_texts">VIEW DETAILS</h4></a>
+		</div>
+	</div>
+	<div class="img_collection" style='background-image: url("img/collection2.jpg");'>
+		<div class="bottom_collection_text">
+			<h4 >Pavadinimas</h4>
+			<h3>99.99eur</h3>
+		</div>
+		<div class="bottom_collection_text_1">
+			<a href="shop.html"><h4 class="box_texts">VIEW DETAILS</h4></a>
+		</div>
+	</div>
+	<div class="img_collection" style='background-image: url("img/collection3.jpg");'>
 		<div class="bottom_collection_text">
 			<h4>Pavadinimas</h4>
 			<h3>99.99eur</h3>
 		</div>
-	</div>
-	<div class="img_collection">
-		<img src="img/collection2.jpg" alt="">
-		<div class="bottom_collection_text">
-			<h4>Pavadinimas</h4>
-			<h3>99.99eur</h3>
-		</div>
-	</div>
-	<div class="img_collection">
-		<img src="img/collection3.jpg" alt="">
-		<div class="bottom_collection_text">
-			<h4>Pavadinimas</h4>
-			<h3>99.99eur</h3>
+		<div class="bottom_collection_text_1">
+			<a href="shop.html"><h4 class="box_texts">VIEW DETAILS</h4></a>
 		</div>
 	</div>
 </section>
-<h1>GET ON THE LIST</h1>
-<h5>and be the first to shop new arrivals and exclusive promotions.</h5>
+<div class="collection_text">
+	<h1>GET ON THE LIST</h1>
+	<h5>and be the first to shop new arrivals and exclusive promotions.</h5>
+</div>
 <section  id="subscribe">
 	<div class="subscribe">
 			<input type="email" placeholder="Email adress">
@@ -124,7 +138,11 @@
 	</div>
 </section>
 <footer id="bottom">
-	&copy; 2017 by Lukas Vaicekauskas.
+	&copy; 2017 by <a href="#">Lukas Vaicekauskas.</a>
 </footer>
 </body>
+<script type="text/javascript" src="assets/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/script.js">
+
+</script>
 </html>

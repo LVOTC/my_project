@@ -1,0 +1,68 @@
+body section#shop_nav {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 35px 0px; }
+  body section#shop_nav .nav_meniu {
+    width: 500px;
+    display: inline-block;
+    text-decoration: none; }
+    body section#shop_nav .nav_meniu a {
+      text-decoration: none; }
+  body section#shop_nav .nav_next {
+    width: 400px;
+    direction: rtl; }
+    body section#shop_nav .nav_next i, body section#shop_nav .nav_next a {
+      text-decoration: none;
+      right: 0px;
+      position: relative; }
+body section#item_box {
+  max-width: 900px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  body section#item_box .item_box_left {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 450px;
+    height: 600px;
+    margin-bottom: 20px; }
+  body section#item_box .item_box_right {
+    width: 350px;
+    padding-left: 50px; }
+    body section#item_box .item_box_right button {
+      width: 100%;
+      padding: 20px 0px;
+      margin: 20px 0px; }
+    body section#item_box .item_box_right #holder, body section#item_box .item_box_right #holder2 {
+      padding-top: 10px;
+      border-top: 1px solid grey;
+      height: 50px;
+      overflow-y: hidden;
+      margin-bottom: 13px; }
+      body section#item_box .item_box_right #holder h2, body section#item_box .item_box_right #holder2 h2 {
+        margin-top: 0px;
+        text-align: left;
+        padding-bottom: 100px; }
+      body section#item_box .item_box_right #holder p, body section#item_box .item_box_right #holder2 p {
+        margin-bottom: 0px;
+        padding-bottom: 0px; }
+    body section#item_box .item_box_right h3 i {
+      display: inline-block;
+      margin-left: 196px;
+      cursor: pointer; }
+    body section#item_box .item_box_right .quantity {
+      width: 25%; }
+    body section#item_box .item_box_right .size {
+      width: 100%;
+      padding: 10px;
+      margin: 20px 0px;
+      margin-top: 5px; }
+      body section#item_box .item_box_right .size select {
+        border-radius: none;
+        padding: 10px; }
+
+/*# sourceMappingURL=shop-item.css.map */

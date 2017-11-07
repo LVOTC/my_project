@@ -13,7 +13,7 @@ $nav-lw-text: #939393;
 body{
   margin:0 auto;
   font-family: $font-stack;
-  .top_footer{
+  .header{
     position: absolute;
     top:0;
     width: 100%;
@@ -49,8 +49,11 @@ body{
       text-align: center;
       a{
         text-decoration: none;
-        color: $nav-text-color;
+        color: lightgrey;
         padding: 0 30px;
+        &:hover{
+          color: $nav-text-color;
+        }
       }
       #brand{
         font-size: 26px;
@@ -65,7 +68,6 @@ body{
   h1{
     text-align: center;
     margin-top: 30px;
-    padding-bottom: 35px;
     color: #313131;
     line-height: 2px;
     padding-top: 25px;
@@ -84,6 +86,17 @@ body{
     text-align: center;
     font-weight: 500;
     color: $text-color;
+  }
+  .shop_text{
+    padding-bottom: 35px;
+  }
+  .collection_text{
+    text-align: center;
+    margin: 0 auto;
+    h5{
+      line-height: 5px;
+      margin-top: 0;
+    }
   }
   #faq_h2{
     margin-top: 50px;
@@ -104,7 +117,7 @@ body{
     padding-bottom: 15px;
     font-weight: 300;
   }
-  section#costumer{
+  section#costumer_care{
     margin-top: 103px;
     text-align: center;
     padding-top: 20px;
@@ -113,34 +126,6 @@ body{
       margin: 0 auto;
       width: 40%;
       text-align: center;
-    }
-    .visit_us_box{
-      display: -webkit-flex;
-      display: flex;
-      -webkit-justify-content: center;
-      justify-content: center;
-      width: 650px;
-      height: 340px;
-      margin: 40px auto;
-        .visit_us{
-          padding: 0px;
-          h3, p {
-            text-align: left;
-            margin: 30px 0px;
-            font-weight: 500;
-          }
-          p{
-            font-weight: 300;
-            line-height: 20px;
-            color: $text-color;
-
-          }
-          h3{
-            line-height: 0px;
-          }
-        }
-
-
     }
     .costumer_box{
       display: -webkit-flex;
@@ -186,6 +171,46 @@ body{
         }
 
       }
+    }
+  }
+  section#costumer{
+    margin-top: 103px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: $top-tp-sm-color;
+    .costumer_text{
+      margin: 0 auto;
+      width: 40%;
+      text-align: center;
+    }
+    .visit_us_box{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      width: 650px;
+      height: 340px;
+      margin: 40px auto;
+        .visit_us{
+          padding: 0px;
+          h3, p {
+            text-align: left;
+            margin: 30px 0px;
+            font-weight: 500;
+            padding: 0 10px;
+          }
+          p{
+            font-weight: 300;
+            line-height: 0px;
+            color: $text-color;
+
+          }
+          h3{
+            line-height: 0px;
+          }
+        }
+
+
     }
   }
   section#about_us{
@@ -287,6 +312,7 @@ body{
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 1430px;
     margin: 0 auto;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -296,8 +322,7 @@ body{
       background-position: center;
       width: 350px;
       height: 480px;
-      margin: 0 auto
-      ;
+      margin: 0 auto;
       margin-bottom: 30px;
       -webkit-transition-property: width, height; /* Safari */
      -webkit-transition-duration: 2s; /* Safari */
@@ -353,6 +378,11 @@ body{
     margin: 0 auto;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    transition-property: background-color;
+    transition-duration: 3s;
+     &:hover .bottom_collection_text1{
+      background-color: red;
+     }
         .shop_img{
           margin: 0px auto;
 			    width: 25%;
@@ -387,35 +417,53 @@ body{
           }
         }
         .img_collection{
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 350px;
+          height: 480px;
+          margin: 0 auto;
           margin: 50px auto 0px auto;
 			    width: 30%;
+          margin-bottom: 100px;
+          -webkit-transition-property: background-size; /* Safari */
+           -webkit-transition-duration: 2s; /* Safari */
+           transition-property: background-size;
+           transition-duration: 2s;
+             &:hover .bottom_collection_text_1{
+               display: block !important;
 
-          img{
-            max-width: 315px;
-            margin: 0;
-            padding: 0;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-          }
+               h4{
+                 color: white;
+               }
+             }
+             &:hover .bottom_collection_text{
+               display: none;
+             }
+              &:hover{
+                background-size: 140% auto;
+              }
+
+
           .bottom_collection_text{
             margin: 0 auto;
   			    width: 100%;
             background-color: $ft-color;
             height: 110px;
-            margin-top: -5px;
             max-width: 315px;
-            padding: 0px;
-            h3{
-              position: relative;
-              top: 40%;
-              transform: translateY(-50%);
-              margin: 0 auto;
-              text-align: center;
-              font-weight: 300;
-              letter-spacing: 2px;
-              color: $text-color;
-            }
-            h4{
+            position: relative;
+            top: 470px;
+              h3{
+                position: relative;
+                top: 40%;
+                transform: translateY(-50%);
+                margin: 0 auto;
+                text-align: center;
+                font-weight: 300;
+                letter-spacing: 2px;
+                color: $text-color;
+              }
+              h4{
               position: relative;
               top: 40%;
               transform: translateY(-50%);
@@ -428,6 +476,33 @@ body{
               text-transform: uppercase;
               color: $text-color;
             }
+      }
+      .bottom_collection_text_1{
+        margin: 0 auto;
+        width: 100%;
+        background-color: rgb(255, 130, 138);
+        height: 110px;
+        max-width: 315px;
+        position: relative;
+        top: 470px;
+        display: none;
+        transition: background-color 3s ease-out;
+          &:hover{
+            background-color: rgba(138, 232, 236,1.0);
+          }
+          a{
+            text-decoration: none;
+            h4{
+              position: relative;
+              top: 45px;
+              margin: 0 auto;
+              text-align: center;
+              font-weight: 300;
+              font-size: 16px;
+              text-transform: uppercase;
+              color: $text-color;
+            }
+          }
       }
     }
   }
@@ -558,6 +633,10 @@ body{
     font-size: 14px;
     letter-spacing: 2px;
     box-shadow: none;
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
   }
 }
 @media only screen and (max-width: 1064px){
@@ -732,6 +811,56 @@ body{
         }
       }
     }
+    section#costumer{
+      margin-top: 103px;
+      text-align: center;
+      padding-top: 20px;
+      height: 710px;
+      margin-bottom: 40px;
+      .costumer_text{
+        width: 80%;
+      }
+      .visit_us_box{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        max-width: 300px;
+        height: 340px;
+        margin: 40px auto;
+        margin-top: 0px;
+          .visit_us{
+            width: 300px;
+            padding: 0px;
+
+            iframe{
+              width: 300px;
+            }
+            h3{
+              text-align: center;
+              margin: 30px 0px;
+              font-weight: 500;
+              padding: 5px 0;
+              padding-top: 0px;
+            }
+            p{
+              font-weight: 300;
+              text-align: center;
+              margin: 30px 0px;
+              line-height: 0px;
+              color: $text-color;
+              font-size: 16px;
+              font-weight: 300;
+
+            }
+            h3{
+              line-height: 0px;
+            }
+          }
+
+
+      }
+    }
   }
 }
 @media only screen and (max-width: 620px){
@@ -740,6 +869,70 @@ body{
       .footer_shop{
         max-width: 320px;
         margin: auto;
+      }
+    }
+    section#faq{
+      max-width: 620px;
+      margin: 20px auto;
+      .faq{
+        padding: 50px 5px;
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 300;
+        text-align: center;
+         h3{
+           font-weight: 500;
+           color: $text-color;
+         }
+
+      }
+    }
+    section#costumer_care{
+      margin-top: 103px;
+      text-align: center;
+      padding-top: 20px;
+      height: 460px;
+      margin-bottom: 40px;
+      .costumer_text{
+        width: 70%;
+        margin:0 auto;
+      }
+      .costumer_box{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 220px;
+        margin: 0 auto;
+          .costumer{
+            // height: 100px;
+            max-width: 220px;
+            margin: 10px 2.5px;
+            .costumer_button{
+              button{
+                padding: 5px 20px;
+                float: right;
+                border: none;
+                letter-spacing: 1.5px;
+              }
+            }
+            .costumer_input{
+              input{
+                width: 210px;
+                display: block;
+                padding: 10px;
+                margin-bottom: 5px;
+                border: none;
+              }
+
+          }
+          textarea{
+            width: 200px;
+            padding: 15.5px;
+            border: none;
+          }
+
+        }
       }
     }
     section#hero{
@@ -884,6 +1077,10 @@ section#sales{
         margin: auto;
       }
     }
+    .lookbook_text{
+      font-size: 14px;
+      margin: 10px 0 30px 0;
+    }
     section#hero{
       .hero{
         height: 250px;
@@ -968,6 +1165,9 @@ section#sales{
 h5{
   font-size: 10px;
   line-height: 20px;
+}
+section#about_us{
+  width: 80%;
 }
 section#sales{
   display: -webkit-flex;
